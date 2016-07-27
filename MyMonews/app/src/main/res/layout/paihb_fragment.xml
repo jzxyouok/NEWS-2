@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+    <android.support.v7.widget.Toolbar
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#e02727"
+        android:id="@+id/view2">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/paihb_my"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/icon_header_my" />
+
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignBottom="@+id/home_my"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/home_logo" />
+
+
+            <ImageView
+                android:id="@+id/home_search"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="29dp"
+                android:layout_marginRight="29dp"
+                android:background="@mipmap/icon_search_normal2"
+                android:textSize="25dp" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/view2"
+        android:layout_height="match_parent">
+
+    <!--注意，水平滚动视图是FrameLayout，只能有一个直接的子控件-->
+    <ScrollView
+        android:background="#89afa6a6"
+        android:id="@+id/scrollView"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <RadioGroup
+            android:id="@+id/paihb_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"></RadioGroup>
+    </ScrollView>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/painb_layout1"
+        android:layout_toRightOf="@id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:id="@+id/painb_layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:id="@+id/paihb_group1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/paihb_button1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableBottom="@drawable/paihb_zi"
+                    android:gravity="center"
+                    android:text="文章"
+                    android:textColor="@color/main_text_yes"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/paihb_button2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/paihb_zi"
+                    android:gravity="center"
+                    android:text="公众号"
+                    android:textColor="@color/main_text_no"
+                    android:textSize="18sp" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/paihb_layout"
+            android:layout_below="@id/painb_layout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+</LinearLayout>
+
+
+</RelativeLayout>

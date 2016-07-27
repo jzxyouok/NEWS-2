@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/recycler1_Layout"
+    android:orientation="horizontal">
+
+    <!--  首页RecyclerView的1号布局-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/recycler1_image"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/aaaa" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/recycler1_tv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="2"
+                android:text="绝对想不到！一代天骄竟然死的如此奇葩！揭秘绝对想不到！一代天骄竟然死的如此奇葩！揭秘绝对想不到！一代天骄竟然死的如此奇葩！揭秘成吉思汗的5种死因"
+                android:textColor="#0d0c0c" />
+
+
+            <RelativeLayout
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recycler1_tv1">
+
+                <TextView
+                    android:id="@+id/recycler1_tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:layout_alignParentBottom="true"
+                    android:text="历史真相大揭秘" />
+
+                <TextView
+                    android:id="@+id/recycler1_tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:layout_alignParentBottom="true"
+                    android:text="阅读 1517" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

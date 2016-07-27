@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/paihp2_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="1"
+            android:textSize="20sp" />
+
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/paihp2_simple"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/paihp2_tv1"
+            fresco:actualImageScaleType="focusCrop"
+            fresco:failureImage="@mipmap/aaaa"
+            fresco:failureImageScaleType="centerInside"
+            fresco:placeholderImage="@mipmap/aaaa"
+            fresco:placeholderImageScaleType="fitCenter"
+            fresco:roundAsCircle="true" />
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/paihp2_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="占豪"
+                android:textColor="#0b0a0a"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/paihp2_tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="独立思考·客观理性·中国立场·百姓视角·平实文字·分享天下事丨国际局势·财经投资·国学哲学丨著作:黄金游戏/货币战争背景 中国经济与应对方略/大博弈 中国之危与机丨2014年度自媒体百大人物/自媒体最佳表现大..." />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <!--ListView-->
+    <ListView
+        android:id="@+id/void_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="#f9efef"
+        android:divider="#f7f5f5"
+        android:dividerHeight="5px"
+
+
+        >
+
+
+    </ListView>
+
+
+</LinearLayout>

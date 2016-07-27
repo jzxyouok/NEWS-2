@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/paihp22_layout"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    tools:context="com.android.monews.activity.Paihp2Activity">
+
+    <!-- 公众号里面的列表布局-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/activity_paihp_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@mipmap/aaaa"
+            />
+
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/activity_paihp_simple"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="160dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            fresco:actualImageScaleType="focusCrop"
+            fresco:failureImage="@mipmap/aaaa"
+            fresco:failureImageScaleType="centerInside"
+            fresco:placeholderImage="@mipmap/aaaa"
+            fresco:placeholderImageScaleType="fitCenter"
+            fresco:roundAsCircle="true" />
+
+
+        <TextView
+            android:id="@+id/activity_paihp_tv2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/activity_paihp_simple"
+            android:layout_below="@id/activity_paihp_image"
+            android:text="独立思考·客观理性·中国立场·百姓视角·平实文字·分享天下事丨国际局势·财经投资·国学哲学丨著作:黄金游戏/货币战争背景 中国经济与应对方略/大博弈 中国之危与机丨2014年度自媒体百大人物/自媒体最佳表现大..."
+            />
+
+
+        <TextView
+            android:id="@+id/activity_paihp_tv1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/activity_paihp_simple"
+            android:layout_above="@id/activity_paihp_tv2"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:text="占豪"
+
+            />
+
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

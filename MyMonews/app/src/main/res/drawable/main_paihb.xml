@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 主界面的排行榜单选按钮图片 -->
+    <item android:state_checked="true" android:drawable="@mipmap/paihb_big"></item>
+    <item android:state_checked="false" android:drawable="@mipmap/paihb_big_naomal"></item>
+
+
+
+
+
+
+
+
+
+</selector>

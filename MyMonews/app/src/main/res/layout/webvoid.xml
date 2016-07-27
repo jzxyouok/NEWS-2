@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <WebView
+        android:id="@+id/video_web"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:visibility="gone"></WebView>
+
+    <ImageView
+        android:id="@+id/video_image"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:background="@mipmap/video2"
+        android:contentDescription="this is an image about the movie"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/video_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="video_url"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/video_play"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/video_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="59dp"
+        android:background="@mipmap/ic_play_video"
+        android:contentDescription="this is a button and play a video" />
+
+    <TextView
+        android:id="@+id/video_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#4d0f0000"
+        android:gravity="center"
+        android:text="加载中......."
+        android:textColor="#ffffff" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/video_image"
+        android:background="#e8e8e8"
+        android:gravity="center_vertical">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+
+            android:id="@+id/video_logo"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/ic_launcher"
+            fresco:roundAsCircle="true" />
+
+
+        <TextView
+            android:id="@+id/video_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/im"
+            android:layout_toRightOf="@+id/im"
+            android:gravity="center"
+            android:text="Boy" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/video_playNum"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:gravity="center_vertical"
+                android:text="播放：1000"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:id="@+id/interpret"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/video_playNum"
+                android:layout_toStartOf="@+id/video_playNum"
+                android:src="@mipmap/interpret" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
